@@ -1,35 +1,30 @@
-// -------------- THEME SWITCHER -------------- //
-@mixin dark-appearance {
-  filter: invert(1);
-  img {
-    filter: invert(1);
-
-    &.ioda { filter: invert(0); }
-  }
-  iframe {
-    filter: invert(1);
-
-    &.ioda { filter: invert(1); }
-  }
+:root {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --link-default: #0066CC;
+  --link-visited: #551A8B;
+  --button-bg: #d0d0d7;
+  --toggle-string: " dark mode"
 }
 
-body[a="dark"] { @include dark-appearance; }
-
-
-@media (prefers-color-scheme: dark) {
-  body[a="auto"] { @include dark-appearance; }
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --link-default: #ff9933;
+  --link-visited: #aae574;
+  --toggle-string: " light mode"
 }
 // -------------------------------------------- //
 
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
-html, body { background: white; }
+html, body { background: var(--color-bg); }
 
 html { height: 100%; }
 
 body {
-  color: black;
+  color: var(--color-fg);
   font-family: monospace;
   font-size: 16px;
   line-height: 1.4;
@@ -67,14 +62,14 @@ hr {
 table { width: 100%; }
 
 table, th, td {
-  border: thin solid black;
+  border: thin solid var(--color-fg);
   border-collapse: collapse;
   padding: 0.4rem;
 }
 
 code {
-  color: white;
-  background: black;
+  color: var(--color-bg);
+  background: var(--color-fg);
 }
 
 div.highlighter-rouge code {
@@ -86,7 +81,7 @@ div.highlighter-rouge code {
 
 blockquote {
   font-style: italic;
-  border: thin solid black;
+  border: thin solid var(--color-fg);
   padding: 1rem;
 
   p { margin: 0; }
@@ -96,4 +91,32 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+a {
+  color: var(--link-default)
+}
+
+a:visited {
+  color: var(--link-visited)
+}
+
+.toggle {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-bg);
+  cursor: pointer;
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 16px;
+  position: fixed;
+}
+
+.toggle:hover::after {
+  content: var(--toggle-string);
+  font-family: monospace;
+}
+
+.invert {
+  filter: invert(1);
 }
