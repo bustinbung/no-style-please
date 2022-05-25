@@ -43,7 +43,10 @@ p { margin: 1rem 0; }
 
 li { margin: 0.4rem 0; }
 
-*:target { background: yellow; }
+*:target {
+  background: yellow;
+  color: black;
+}
 
 .w {
   max-width: 640px;
