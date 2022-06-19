@@ -10,4 +10,5 @@ Hey, I'm Justin, an 18 year old musician, developer, and cinematographer based i
 + [github](https://github.com/bustinbung)
 + [twitter](https://twitter.com/bustinbung)
 + [instagram](https://instagram.com/bustinbung)
++ [snapchat](https://t.snapchat.com/kR0XK2AW)
 + [youtube](https://www.youtube.com/c/JustinJung0542)
