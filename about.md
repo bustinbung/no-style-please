@@ -2,7 +2,9 @@
 layout: page
 title: about me
 ---
-Hey, I'm Justin, an 18 year old musician, developer, and cinematographer based in Atlanta. Feel free to contact me using the channels below.
+Hey, I'm Justin, an 18 year old musician, developer, and cinematographer based in Athens. I'm currently enrolled at the University of Georgia as an intended Entertainment and Media Studies major with a music minor.
+
+Feel free to contact me using the channels below.
 
 <hr>
 
