@@ -8,7 +8,7 @@ Feel free to contact me using the channels below.
 
 <hr>
 
-+ [email](mailto:junghyunjoon04@gmail.com)
++ [email](mailto:justin@bustinbung.com)
 + [github](https://github.com/bustinbung)
 + [twitter](https://twitter.com/bustinbung)
 + [instagram](https://instagram.com/bustinbung)
