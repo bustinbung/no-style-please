@@ -4,18 +4,10 @@
 entries:
   - title: info
     entries:
-      - title: about me
+      - title: about
         url: about
       - title: email
         url: mailto:justin@bustinbung.com
-
-  - title: projects
-    post_list:
-      limit: 5
-      category: projects
-      show_more: true
-      show_more_text: more projects...
-      show_more_url: archive_projects
 
   - title: films
     post_list:
@@ -24,6 +16,14 @@ entries:
       show_more: true
       show_more_text: more films...
       show_more_url: archive_films
+
+  - title: projects
+    post_list:
+      limit: 5
+      category: projects
+      show_more: true
+      show_more_text: more projects...
+      show_more_url: archive_projects
 
   - title: blog
     post_list:
